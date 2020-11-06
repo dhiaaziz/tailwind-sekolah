@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/addition.css">
     <title>Document</title>
     <style>
-       
+
     </style>
 
 </head>
@@ -20,14 +20,14 @@
         <!--content wrapper-->
         <header class="fixed z-10 w-full">
             <nav class="w-full bg-white shadow-md ">
-                <div class="container flex items-center justify-between mx-auto">
+                <div class="container grid items-center justify-between grid-cols-2 mx-auto md:flex">
                     <h1 class="py-4 font-bold uppercase">
                         <a href="/" class="flex items-center pl-4 text-sm md:pl-0 ">
                             <img src="img/logo.png" alt="" class="inline-block h-10 mr-3">
                             Madrasah Tsanawiyah Janggala
                         </a>
                     </h1>
-                    <div class="p-4 cursor-pointer md:hidden" id="burger">
+                    <div class="flex justify-end p-4 cursor-pointer md:hidden" id="burger">
                         <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -35,21 +35,24 @@
                         </svg>
                     </div>
 
-                    <ul class="justify-start hidden py-4 text-xs font-bold tracking-wider uppercase md:flex">
-                        <li class="px-3">
-                            <a href="index.html" class="text-green-500">Home</a>
-                        </li>
-                        <li class="px-3">
-                            <a href="tentang.html" class=" hover:text-green-500">Tentang Kami</a>
-                        </li>
-                        <li class="px-3">
-                            <a href="berita.html" class=" hover:text-green-500">Berita</a>
-                        </li>
-                        <li class="pl-3">
-                            <a href=""
-                                class="text-white transition duration-300 ease-out bg-green-500 border-2 border-green-500 hover:text-green-500 hover:bg-white btn">Sisfo</a>
-                        </li>
-                    </ul>
+                    <div class="hidden col-span-2 md:flex" id="menu">
+                        <ul class="flex flex-col items-center col-span-2 py-4 text-xs font-bold tracking-wider uppercase md:visible md:flex-row">
+                            <li class="px-3 py-2 md:py-0 ">
+                                <a href="index.html" class="text-green-500">Home</a>
+                            </li>
+                            <li class="px-3 py-2 md:py-0 ">
+                                <a href="tentang.html" class=" hover:text-green-500">Tentang Kami</a>
+                            </li>
+                            <li class="px-3 py-2 md:py-0 ">
+                                <a href="berita.html" class=" hover:text-green-500">Berita</a>
+                            </li>
+                            <li class="py-4 md:py-0 md:pl-3">
+                                <a href=""
+                                    class="text-white transition duration-300 ease-out bg-green-500 border-2 border-green-500 hover:text-green-500 hover:bg-white btn">Sisfo</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
 
@@ -98,12 +101,13 @@
 
             <!--section tentang kami-->
             <section class="relative pb-4 text-white bg-green-700">
-                
+
                 <!-- Container button warna warni -->
                 <div class="container px-8 mx-auto mb-8 md:px-0 md:absolute button-colorful-centering" style="">
                     <div class="flex flex-col text-black shadow-lg md:flex-row">
                         <a href="" class="flex-1">
-                            <div class="flex flex-col items-center justify-center h-24 text-red-900 bg-red-400 hover:text-white hover:bg-red-700 md:h-32">
+                            <div
+                                class="flex flex-col items-center justify-center h-24 text-red-900 bg-red-400 hover:text-white hover:bg-red-700 md:h-32">
                                 <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -119,7 +123,8 @@
                         </a>
 
                         <a href="" class="flex-1">
-                            <div class="flex flex-col items-center justify-center h-24 text-yellow-900 bg-yellow-400 hover:text-white hover:bg-yellow-700 md:h-32">
+                            <div
+                                class="flex flex-col items-center justify-center h-24 text-yellow-900 bg-yellow-400 hover:text-white hover:bg-yellow-700 md:h-32">
                                 <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -131,7 +136,8 @@
                         </a>
 
                         <a href="" class="flex-1">
-                            <div class="flex flex-col items-center justify-center h-24 text-blue-900 bg-blue-400 hover:text-white hover:bg-blue-700 md:h-32">
+                            <div
+                                class="flex flex-col items-center justify-center h-24 text-blue-900 bg-blue-400 hover:text-white hover:bg-blue-700 md:h-32">
                                 <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -143,7 +149,8 @@
                         </a>
 
                         <a href="" class="flex-1">
-                            <div class="flex flex-col items-center justify-center h-24 text-gray-900 bg-gray-400 hover:text-white hover:bg-gray-700 md:h-32">
+                            <div
+                                class="flex flex-col items-center justify-center h-24 text-gray-900 bg-gray-400 hover:text-white hover:bg-gray-700 md:h-32">
                                 <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -155,8 +162,14 @@
                         </a>
 
                         <a href="" class="flex-1">
-                            <div class="flex flex-col items-center justify-center h-24 text-indigo-900 bg-indigo-400 hover:text-white hover:bg-indigo-700 md:h-32">
-                                <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                            <div
+                                class="flex flex-col items-center justify-center h-24 text-indigo-900 bg-indigo-400 hover:text-white hover:bg-indigo-700 md:h-32">
+                                <svg class="h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                    </path>
+                                </svg>
                                 <span class="mt-2 font-bold tracking-wider text-center uppercase">Ilham Hanif</span>
                             </div>
                         </a>
@@ -208,13 +221,13 @@
                     <div class="flex justify-end mt-8">
                         <a href="" class="tracking-widest border-b-2 border-yellow-500">Selengkapnya →</a>
                     </div>
-                    
+
                 </div>
             </section>
 
             <!--section berita-->
             <section class="bg-gray-100 ">
-                <div class="container py-8 pb-8 mx-auto md:px-0">
+                <div class="container px-8 py-8 pb-8 mx-auto md:px-0">
                     <h1 class="text-4xl font-bold uppercase ">Berita</h1>
                     <div class="mt-4 mb-8">
                         <div class="md:flex card">
@@ -383,6 +396,7 @@
     </div>
 
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
