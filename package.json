@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/css/styles.css"
+    "build-css": "tailwindcss build src/tailwind.css -o public/prod/css/tailwind.css",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss public/prod/css/tailwind.css -o public/css/tailwind.css --watch\" \"live-server ./public\"",
+    "development": "cross-env NODE_ENV=development postcss public/prod/css/tailwind.css -o public/css/tailwind.css",
+    "production": "cross-env NODE_ENV=production postcss public/prod/css/tailwind.css -o public/css/tailwind.css",
+    "start": "npm run serve"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,11 @@
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1"
-  }
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "cross-env": "^7.0.2",
+    "postcss": "^8.1.6",
+    "postcss-cli": "^8.2.0"
+  },
+  "peerDependencies": {}
 }
